@@ -9,11 +9,12 @@ export default function PostBody({ content }: PostBodyProps) {
     <div
       className="prose prose-gray dark:prose-invert max-w-none
         prose-headings:font-semibold
-        prose-a:text-blue-600 dark:prose-a:text-blue-400
+        prose-a:text-emerald-600 dark:prose-a:text-emerald-400
         prose-code:before:content-none prose-code:after:content-none
         prose-code:bg-gray-100 dark:prose-code:bg-gray-800
-        prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
-        prose-pre:bg-gray-900 dark:prose-pre:bg-gray-950"
+        prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-gray-800 dark:prose-code:text-gray-200
+        prose-pre:bg-gray-900 dark:prose-pre:bg-gray-950
+        [&_pre_code]:bg-transparent [&_pre_code]:p-0 [&_pre_code]:text-gray-100 [&_pre_code]:rounded-none"
       dangerouslySetInnerHTML={{ __html: content }}
     />
   );

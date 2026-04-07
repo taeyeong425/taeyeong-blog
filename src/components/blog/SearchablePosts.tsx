@@ -32,7 +32,7 @@ export default function SearchablePosts({ posts }: SearchablePostsProps) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="제목 또는 내용으로 검색..."
-          className="w-full px-4 py-2.5 pl-10 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition"
+          className="w-full px-4 py-2.5 pl-10 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 dark:focus:ring-emerald-400 transition"
         />
         <svg
           className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 dark:text-gray-500 pointer-events-none"
@@ -105,7 +105,7 @@ function SearchPostCard({ post, query }: SearchPostCardProps) {
           <span>·</span>
           <span>{post.readingTime}</span>
         </div>
-        <h2 className="text-xl font-semibold mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+        <h2 className="text-xl font-semibold mb-2 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
           <Highlight text={post.title} query={query} />
         </h2>
         <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed line-clamp-2">
